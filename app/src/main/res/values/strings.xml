@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Calculadora de Notas</string>
+    <string name="splash">IconSplash</string>
+    <string name="mainIcon">mainIcon</string>
+    <string name="calcularNotas">Calcular Notas</string>
+    <string name="promedioSemestre">Promedio del Semestre</string>
+    <string name="miHorario">Mi Horario</string>
+    <string name="finali">Final:</string>
+    <string name="calcular">Calcular</string>
+    <string name="nota1">Nota 1</string>
+    <string name="nota2">Nota 2</string>
+    <string name="nota3">Nota 3</string>
+    <string name="necesitas">Necesitas:</string>
+    <string name="aprobar">para aprobar la materia en 3.0</string>
+    <string name="error001">No ingresó la nota 1. El valor se definirá como 0</string>
+    <string name="error002">No ingresó la nota 2. El valor se definirá como 0</string>
+    <string name="error003">No ingresó la nota 3. El valor se definirá como 0</string>
+</resources>
