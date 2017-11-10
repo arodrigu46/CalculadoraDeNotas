@@ -15,4 +15,19 @@
     <string name="error001">No ingresó la nota 1. El valor se definirá como 0</string>
     <string name="error002">No ingresó la nota 2. El valor se definirá como 0</string>
     <string name="error003">No ingresó la nota 3. El valor se definirá como 0</string>
+    <string name="ContentNotas">Aqui puedes calcular la nota final de distintas formas, ya sea rellenando todos los cortes, o dejando el tercero en blanco para poder calcular la nota que necesitarias en el tercer corte para aprobar la materia en 3.0</string>
+    <array name="OpcionesPrincipal">
+        <item>@string/calcularNotas</item>
+        <item>@string/promedioSemestre</item>
+        <item>@string/miHorario</item>
+        <item>@string/calculaNivel</item>
+    </array>
+    <string name="calculaNivel">Calcula tu Nivel</string>
+    <string name="title_activity_promedio">Promedio</string>
+    <string name="materia">Materia:</string>
+    <string name="creditos">Creditos:</string>
+    <string name="nota">Nota:</string>
+    <string name="añadir">Añadir</string>
+    <string name="promedio">Promedio:</string>
+    <string name="limpiar">Limpiar</string>
 </resources>

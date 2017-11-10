@@ -1,45 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="ziron.calculadoradenotas.Principal">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="ziron.calculadoradenotas.Principal">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/btnClcNotas"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="72dp"
-            android:contentDescription="@string/mainIcon"
-            app:srcCompat="@drawable/icon" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:contentDescription="@string/mainIcon"
+                app:srcCompat="@drawable/icon" />
 
-    <Button
-        android:id="@+id/btnClcNotas"
+    <ListView
+        android:id="@+id/lsOpciones"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:onClick="calculoDeNotasStart"
-        android:text="@string/calcularNotas" />
-
-    <Button
-        android:id="@+id/btnPromSem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/btnClcNotas"
-        android:onClick="promedioSemestreStart"
-        android:text="@string/promedioSemestre" />
-
-    <Button
-        android:id="@+id/btnHorario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/btnPromSem"
-        android:text="@string/miHorario" />
-</RelativeLayout>
+        android:layout_height="334dp" />
+</LinearLayout>
