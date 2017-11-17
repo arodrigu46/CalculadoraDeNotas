@@ -2,8 +2,8 @@ package ziron.calculadoradenotas;
 
 import android.content.Intent;
 import android.content.res.Resources;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,50 +12,50 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Notas extends AppCompatActivity {
+public class Notas2 extends AppCompatActivity {
+
     private double n1, n2, n3, fn;
     private double p1, p2, p3;
-
-    private EditText txtNota1;
-    private EditText txtNota2;
-    private EditText txtNota3;
-    private TextView lblResFinal;
+    private EditText nota1;
+    private EditText nota2;
+    private EditText nota3;
+    private TextView Final;
     private TextView lblNeed;
     private Resources res;
+    Bundle bundle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notas);
-        txtNota1 = (EditText)findViewById(R.id.txtNota1);
-        txtNota2 = (EditText)findViewById(R.id.txtNota2);
-        txtNota3 = (EditText)findViewById(R.id.txtNota3);
-        lblResFinal = (TextView)findViewById(R.id.lblResFinal);
+        setContentView(R.layout.activity_notas2);
+        nota1 = (EditText)findViewById(R.id.txtNota1);
+        nota2 = (EditText)findViewById(R.id.txtNota2);
+        nota3 = (EditText)findViewById(R.id.txtNota3);
+        Final = (TextView)findViewById(R.id.lblResFinal);
         lblNeed = (TextView)findViewById(R.id.lblNeed);
         res = this.getResources();
+        //Recuperamos la información pasada en el intent
+        bundle = this.getIntent().getExtras();
+    }public void calcular(View v){
+        p1 = Double.parseDouble(bundle.getString("porcentaje1"));
+        p2 = Double.parseDouble(bundle.getString("porcentaje2"));
+        p3 = Double.parseDouble(bundle.getString("porcentaje3"));
 
-
-    }
-    public void calcular(View v){
-        p1 = 30;
-        p2 = 30;
-        p3 = 40;
-
-        if (!esVacio(txtNota1.getText().toString())) {
-            n1 = Double.parseDouble(String.valueOf(txtNota1.getText()));
+        if (!TextUtils.isEmpty(nota1.getText())) {
+            n1 = Double.parseDouble(String.valueOf(nota1.getText()));
         }else{
-            Toast.makeText(this, res.getString(R.string.error001), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No ingresó la nota 1. El valor se definirá como 0", Toast.LENGTH_SHORT).show();
             n1 = 0;
         }
-        if (!TextUtils.isEmpty(txtNota2.getText())) {
-            n2 = Double.parseDouble(String.valueOf(txtNota2.getText()));
+        if (!TextUtils.isEmpty(nota2.getText())) {
+            n2 = Double.parseDouble(String.valueOf(nota2.getText()));
         }else{
-            Toast.makeText(this, res.getString(R.string.error002), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No ingresó la nota 2. El valor se definirá como 0", Toast.LENGTH_SHORT).show();
             n2 = 0;
         }
-        if (!TextUtils.isEmpty(txtNota3.getText())) {
-            n3 = Double.parseDouble(String.valueOf(txtNota3.getText()));
+        if (!TextUtils.isEmpty(nota3.getText())) {
+            n3 = Double.parseDouble(String.valueOf(nota3.getText()));
         }else{
-            Toast.makeText(this, res.getString(R.string.error003), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No ingresó la nota 3. El valor se definirá como 0", Toast.LENGTH_SHORT).show();
             n3 = 0;
         }
         n1 = (n1 * (p1/100));
@@ -67,23 +67,20 @@ public class Notas extends AppCompatActivity {
 //            DecimalFormat df = new DecimalFormat("#.###");
 //            df.format(fn);
 
-        lblResFinal.setText(Double.toString(fn2));
+        Final.setText(Double.toString(fn2));
         //segunda etapa
         fn = 3 - fn;
         fn = fn/(p3/100);
         double fn3 = fn;
         fn3= Math.rint(fn3*100)/100;
         lblNeed.setText(Double.toString(fn3));
-    }
-    private boolean esVacio(String t1){
-        if (TextUtils.isEmpty(t1)) return true;
-        else return false;
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.calcmenu, menu);
+        getMenuInflater().inflate(R.menu.calcmenu2, menu);
         return true;
     }
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -93,9 +90,9 @@ public class Notas extends AppCompatActivity {
         int id = item.getItemId();
         switch (item.getItemId()) {
 
-            case R.id.mPorcentajes:
+            case R.id.inicio:
                 //metodoSearch()
-                Intent intent = new Intent(this, Porcentajes.class);
+                Intent intent = new Intent(this, Principal.class);
 
                 //Creamos la información a pasar entre actividades
                 // Bundle b = new Bundle();
@@ -107,6 +104,7 @@ public class Notas extends AppCompatActivity {
                 //Iniciamos la nueva actividad
                 startActivity(intent);
                 finish();
+
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

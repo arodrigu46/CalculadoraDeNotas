@@ -15,6 +15,11 @@
     <string name="error001">No ingresó la nota 1. El valor se definirá como 0</string>
     <string name="error002">No ingresó la nota 2. El valor se definirá como 0</string>
     <string name="error003">No ingresó la nota 3. El valor se definirá como 0</string>
+    <string name="error004">Ingrese los valores solicitados</string>
+    <string name="error005">No definió el porcentaje del primer corte</string>
+    <string name="error006">No definió el porcentaje del segundo corte</string>
+    <string name="error007">No definió el porcentaje del tercer corte</string>
+    <string name="error008">Ingrese correctamente los porcentajes</string>
     <string name="ContentNotas">Aqui puedes calcular la nota final de distintas formas, ya sea rellenando todos los cortes, o dejando el tercero en blanco para poder calcular la nota que necesitarias en el tercer corte para aprobar la materia en 3.0</string>
     <array name="OpcionesPrincipal">
         <item>@string/calcularNotas</item>
@@ -30,4 +35,75 @@
     <string name="añadir">Añadir</string>
     <string name="promedio">Promedio:</string>
     <string name="limpiar">Limpiar</string>
+    <string name="cambiarp">Cambiar Porcentajes</string>
+    <string name="primercorte">% Primer Corte</string>
+    <string name="segundocorte">% Segundo Corte</string>
+    <string name="tercercorte">% Tercer Corte</string>
+    <string name="inicio">Inicio</string>
+    <string name="tituloNivel">Calculadora Nivel Actual</string>
+    <string name="numcreditplan">Número de créditos del plan de estudio</string>
+    <string name="numcreditaprob">Número de créditos aprobados</string>
+    <string name="numcreditmatr">Número de créditos matriculados en el periodo actual</string>
+    <string name="numnivel" >Número de niveles del plan de estudio</string>
+    <string name="msjNivel" >"El nivel actual del estudiante es: "</string>
+    <string-array name="CreditMatri">
+        <item>@string/c1</item>
+        <item>@string/c2</item>
+        <item>@string/c3</item>
+        <item>@string/c4</item>
+        <item>@string/c5</item>
+        <item>@string/c6</item>
+        <item>@string/c7</item>
+        <item>@string/c8</item>
+        <item>@string/c9</item>
+        <item>@string/c10</item>
+        <item>@string/c11</item>
+        <item>@string/c12</item>
+        <item>@string/c13</item>
+        <item>@string/c14</item>
+        <item>@string/c15</item>
+        <item>@string/c16</item>
+        <item>@string/c17</item>
+        <item>@string/c18</item>
+        <item>@string/c19</item>
+        <item>@string/c20</item>
+        <item>@string/c21</item>
+        <item>@string/c22</item>
+        <item>@string/c23</item>
+    </string-array>
+    <string-array name="Niveles">
+        <item>@string/c1</item>
+        <item>@string/c2</item>
+        <item>@string/c3</item>
+        <item>@string/c4</item>
+        <item>@string/c5</item>
+        <item>@string/c6</item>
+        <item>@string/c7</item>
+        <item>@string/c8</item>
+        <item>@string/c9</item>
+        <item>@string/c10</item>
+    </string-array>
+    <string name="c1">1</string>
+    <string name="c2">2</string>
+    <string name="c3">3</string>
+    <string name="c4">4</string>
+    <string name="c5">5</string>
+    <string name="c6">6</string>
+    <string name="c7">7</string>
+    <string name="c8">8</string>
+    <string name="c9">9</string>
+    <string name="c10">10</string>
+    <string name="c11">11</string>
+    <string name="c12">12</string>
+    <string name="c13">13</string>
+    <string name="c14">14</string>
+    <string name="c15">15</string>
+    <string name="c16">16</string>
+    <string name="c17">17</string>
+    <string name="c18">18</string>
+    <string name="c19">19</string>
+    <string name="c20">20</string>
+    <string name="c21">21</string>
+    <string name="c23">23</string>
+    <string name="c22">22</string>
 </resources>
