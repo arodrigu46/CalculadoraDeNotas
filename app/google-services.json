@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "512437588664",
+    "firebase_url": "https://fir-storage-658c4.firebaseio.com",
+    "project_id": "fir-storage-658c4",
+    "storage_bucket": "fir-storage-658c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512437588664:android:bfce290e984d9af3",
+        "android_client_info": {
+          "package_name": "ziron.calculadoradenotas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512437588664-b7dfrr2fpirh6tj17bs2vog6ced9cj4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ziron.calculadoradenotas",
+            "certificate_hash": "ba8575d3ac75097df3ef05f58ee004f0605b7003"
+          }
+        },
+        {
+          "client_id": "512437588664-j22evp4ri4rc6rglkaj60rg4lu7vff5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWLgMvzruoiORsgCTBgZGh4jxeI-V43JU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512437588664-j22evp4ri4rc6rglkaj60rg4lu7vff5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

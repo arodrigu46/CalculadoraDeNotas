@@ -63,4 +63,12 @@
     <string name="error006">Did not define the percentage of the second cut</string>
     <string name="error007">Did not define the percentage of the third cut</string>
     <string name="error008">Enter the percentages correctly</string>
+    <string name="elegir">Choose</string>
+    <string name="subir">Upload</string>
+    <string name="error10">Pick up an image</string>
+    <string name="error003">No ingresó la nota 3. El valor se definirá como 0</string>
+    <string name="actualizacarnet">" Update your card"</string>
+    <string name="error11">Uploading...</string>
+    <string name="error12">%    Uploaded...</string>
+    <string name="error13">Image Uploaded</string>
 </resources>

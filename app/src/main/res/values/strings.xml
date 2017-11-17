@@ -26,6 +26,7 @@
         <item>@string/promedioSemestre</item>
         <item>@string/miHorario</item>
         <item>@string/calculaNivel</item>
+        <item>@string/actualizacarnet</item>
     </array>
     <string name="calculaNivel">Calcula tu Nivel</string>
     <string name="title_activity_promedio">Promedio</string>
@@ -44,8 +45,8 @@
     <string name="numcreditplan">Número de créditos del plan de estudio</string>
     <string name="numcreditaprob">Número de créditos aprobados</string>
     <string name="numcreditmatr">Número de créditos matriculados en el periodo actual</string>
-    <string name="numnivel" >Número de niveles del plan de estudio</string>
-    <string name="msjNivel" >"El nivel actual del estudiante es: "</string>
+    <string name="numnivel">Número de niveles del plan de estudio</string>
+    <string name="msjNivel">"El nivel actual del estudiante es: "</string>
     <string-array name="CreditMatri">
         <item>@string/c1</item>
         <item>@string/c2</item>
@@ -106,4 +107,13 @@
     <string name="c21">21</string>
     <string name="c23">23</string>
     <string name="c22">22</string>
+    <string name="elegir">elegir</string>
+    <string name="subir">subir</string>
+    <string name="error10">Seleccione una imagen</string>
+    <string name="actualizacarnet">Actualiza tu Carnet</string>
+    <string name="error11">Subiendo...</string>
+    <string name="error12">%    Subido...</string>
+    <string name="error13">Imagen Subida</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="ok">OK</string>
 </resources>
