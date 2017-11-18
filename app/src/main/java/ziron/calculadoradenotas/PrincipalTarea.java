@@ -1,5 +1,6 @@
 package ziron.calculadoradenotas;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -18,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class PrincipalTarea extends AppCompatActivity {
+public class PrincipalTarea extends AppCompatActivity implements AdaptadorTarea.OnTareaClickListener {
     private RecyclerView listado;
     private ArrayList<Tarea> tareas;
     private Resources res;
@@ -63,6 +64,25 @@ public class PrincipalTarea extends AppCompatActivity {
 
             }
         });
+    }
+    public void agregar(View v){
+        Intent i = new Intent(PrincipalTarea.this,CrearTarea.class);
+        startActivity(i);
+
+    }
+
+    @Override
+    public void onTareaClick(Tarea p) {
+        Intent i = new Intent(PrincipalTarea.this,Principal.class);
+        Bundle b = new Bundle();
+        b.putString("id",p.getId());
+        b.putString("nombre",p.getNombre());
+        b.putString("FechaEntrega",p.getFechaEntrega());
+        b.putString("foto",p.getFoto());
+
+        i.putExtra("datos",b);
+        startActivity(i);
+
     }
 
 }

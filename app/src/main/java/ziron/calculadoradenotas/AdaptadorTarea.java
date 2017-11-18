@@ -36,6 +36,7 @@ public class AdaptadorTarea extends RecyclerView.Adapter<AdaptadorTarea.TareaVie
     }
 
 
+
     @Override
     public TareaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_tarea,parent,false);
