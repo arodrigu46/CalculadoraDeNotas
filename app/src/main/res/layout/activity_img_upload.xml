@@ -8,7 +8,32 @@
         android:orientation="vertical"
         tools:context="ziron.calculadoradenotas.ImgUpload">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aceptasfoto" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="43dp" >
+
+        <RadioButton
+            android:id="@+id/rbSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/autorizo" />
+
+        <RadioButton
+            android:id="@+id/rbNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/noautorizo" />
+    </RadioGroup>
+
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">

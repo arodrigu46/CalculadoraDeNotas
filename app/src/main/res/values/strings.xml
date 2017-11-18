@@ -116,4 +116,16 @@
     <string name="error13">Imagen Subida</string>
     <string name="mensaje">Mensaje</string>
     <string name="ok">OK</string>
+    <string name="autorizo">Autorizo</string>
+    <string name="noautorizo">No Autorizo</string>
+    <string name="aceptasfoto">Aceptas subir la foto a nuestros servidores?</string>
+    <string name="error14">Seleccione una opción</string>
+    <string name="agregar">Agregar</string>
+    <string name="fechaEntrega">Fecha de Entrega</string>
+    <string name="nombre">Nombre</string>
+    <string name="guardar">Guardar</string>
+    <string name="mensaje_error_vacio">Digite la información faltante</string>
+    <string name="mensaje_persona_guardada">Persona Guardada Exitosamente!</string>
+    <string name="mensaje_seleccion_imagen">Seleccione la imagen</string>
+    <string name="title_activity_principal_tarea">PrincipalTarea</string>
 </resources>

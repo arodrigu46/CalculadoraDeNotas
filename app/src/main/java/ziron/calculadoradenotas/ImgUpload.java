@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -32,6 +33,8 @@ public class ImgUpload extends AppCompatActivity {
     private Resources res;
     private Uri filePath;
     private StorageReference storageReference;
+    private RadioButton rbSi;
+    private RadioButton rbNo;
 
 
     @Override
@@ -42,6 +45,8 @@ public class ImgUpload extends AppCompatActivity {
         imageView = (ImageView)findViewById(R.id.imageView);
         buttonChoose = (Button)findViewById(R.id.buttonChoose);
         buttonUpload = (Button)findViewById(R.id.buttonUpload);
+        rbSi = (RadioButton)findViewById(R.id.rbSi);
+        rbNo = (RadioButton)findViewById(R.id.rbNo);
         res = this.getResources();
 
 
@@ -54,7 +59,16 @@ public class ImgUpload extends AppCompatActivity {
         showFileChoose();
     }
     public void upload(View v){
-        uploadFile();
+        if(rbSi.isChecked()){
+            uploadFile();
+        }else{
+            if(rbNo.isChecked()){
+                finish();
+            }else{
+                Toast.makeText(this, res.getString(R.string.error14), Toast.LENGTH_SHORT).show();
+            }
+        }
+
     }
 
     private void showFileChoose(){
