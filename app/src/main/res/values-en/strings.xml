@@ -71,4 +71,27 @@
     <string name="error11">Uploading...</string>
     <string name="error12">%    Uploaded...</string>
     <string name="error13">Image Uploaded</string>
+    <string name="mensaje">" Message"</string>
+    <string name="ok">OK</string>
+    <string name="autorizo">" I Authorize"</string>
+    <string name="noautorizo">" I do not Authorize"</string>
+    <string name="aceptasfoto">Do you agree to upload the photo to our servers?</string>
+    <string name="error14">" Choose an option"</string>
+    <string name="agregar">" Add"</string>
+    <string name="fechaEntrega">" Date of delivery"</string>
+    <string name="nombre">Name</string>
+    <string name="guardar">Save</string>
+    <string name="mensaje_error_vacio">Type the missing information</string>
+    <string name="mensaje_persona_guardada">Task Kept Successfully!</string>
+    <string name="mensaje_seleccion_imagen">Select the image</string>
+    <string name="title_activity_principal_tarea">PrincipalTarea</string>
+    <string name="tareas">Tasks</string>
+    <string name="creaciontareas">Creation of the Task</string>
+    <string name="titulotarea">Creation of Task Reminders.</string>
+    <string name="parrafoTarea1">This module allows you to save the tasks you have throughout your study season. With this way you will have all your earrings in one place and immediately.</string>
+    <string name="parrafoTarea2">For this it is necessary that you grant us the permissions to manage your data entered in this app, especially the use and storage of the photo that you take.</string>
+    <string name="parrafoTarea3">" Remember to take a clear photo of your notebook where you detail what the task is about."</string>
+    <string name="si">Yes</string>
+    <string name="no">Not</string>
+    <string name="error15">" Select a valid option"</string>
 </resources>

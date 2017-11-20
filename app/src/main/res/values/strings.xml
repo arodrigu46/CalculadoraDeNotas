@@ -126,8 +126,16 @@
     <string name="nombre">Nombre</string>
     <string name="guardar">Guardar</string>
     <string name="mensaje_error_vacio">Digite la información faltante</string>
-    <string name="mensaje_persona_guardada">Persona Guardada Exitosamente!</string>
+    <string name="mensaje_persona_guardada">Tarea Guardada Exitosamente!</string>
     <string name="mensaje_seleccion_imagen">Seleccione la imagen</string>
     <string name="title_activity_principal_tarea">PrincipalTarea</string>
     <string name="tareas">Tareas</string>
+    <string name="creaciontareas">Creación de Tareas</string>
+    <string name="titulotarea">Creación de Recordatorios de Tareas.</string>
+    <string name="parrafoTarea1">Este modulo te permite guardar las tareas que tengas a lo largo de tu temporada de estudio. Con esta manera tendrás en un solo lugar y de manera inmediata todos tus pendientes.</string>
+    <string name="parrafoTarea2">Para esto es necesario que nos otorges los permisos para administrar tus datos ingresados en esta app, en especial el uso y almecenamiento de la foto que tomes.</string>
+    <string name="parrafoTarea3">Recuerda tomar una foto clara de tu cuaderno donde detalle de qué se trata la tarea.</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="error15">Seleccione una opción válida</string>
 </resources>

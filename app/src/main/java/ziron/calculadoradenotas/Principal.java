@@ -37,7 +37,7 @@ public class Principal extends AppCompatActivity {
                         startActivity(in);
                         break;
                     case 2:
-                        in = new Intent(Principal.this,Promedio.class);
+                        in = new Intent(Principal.this,Principal.class);
                         startActivity(in);
                         break;
                     case 3:
@@ -49,7 +49,7 @@ public class Principal extends AppCompatActivity {
                         startActivity(in);
                         break;
                     case 5:
-                        in = new Intent(Principal.this,PrincipalTarea.class);
+                        in = new Intent(Principal.this,IntroTareas.class);
                         startActivity(in);
                         break;
                 }
