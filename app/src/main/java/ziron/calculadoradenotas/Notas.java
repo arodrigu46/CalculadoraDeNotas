@@ -13,8 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Notas extends AppCompatActivity {
-    private double n1, n2, n3, fn;
-    private double p1, p2, p3;
+
 
     private EditText txtNota1;
     private EditText txtNota2;
@@ -36,15 +35,12 @@ public class Notas extends AppCompatActivity {
 
     }
     public void calcular(View v){
-        p1 = 30;
-        p2 = 30;
-        p3 = 40;
-
+        double n1,n2,n3;
         if (!esVacio(txtNota1.getText().toString())) {
             n1 = Double.parseDouble(String.valueOf(txtNota1.getText()));
         }else{
             Toast.makeText(this, res.getString(R.string.error001), Toast.LENGTH_SHORT).show();
-            n1 = 0;
+           n1 = 0;
         }
         if (!TextUtils.isEmpty(txtNota2.getText())) {
             n2 = Double.parseDouble(String.valueOf(txtNota2.getText()));
@@ -58,19 +54,16 @@ public class Notas extends AppCompatActivity {
             Toast.makeText(this, res.getString(R.string.error003), Toast.LENGTH_SHORT).show();
             n3 = 0;
         }
-        n1 = (n1 * (p1/100));
-        n2 = (n2 * (p2/100));
-        n3 = (n3 * (p3/100));
-        fn = n1 + n2 + n3;
+
+
+        double fn = Metodos.calculoNota(n1,n2,n3);
         double fn2 = fn;
         fn2 = Math.rint(fn*100)/100;
-//            DecimalFormat df = new DecimalFormat("#.###");
-//            df.format(fn);
 
         lblResFinal.setText(Double.toString(fn2));
         //segunda etapa
         fn = 3 - fn;
-        fn = fn/(p3/100);
+        fn = fn/(40/100);
         double fn3 = fn;
         fn3= Math.rint(fn3*100)/100;
         lblNeed.setText(Double.toString(fn3));
@@ -94,17 +87,7 @@ public class Notas extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.mPorcentajes:
-                //metodoSearch()
                 Intent intent = new Intent(this, Porcentajes.class);
-
-                //Creamos la información a pasar entre actividades
-                // Bundle b = new Bundle();
-                //b.putString("nombre", txtNombre.getText().toString());
-
-                //Añadimos la información al intent
-                //intent.putExtras(b);
-
-                //Iniciamos la nueva actividad
                 startActivity(intent);
                 finish();
                 return true;
