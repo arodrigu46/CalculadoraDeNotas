@@ -48,6 +48,10 @@ public class Principal extends AppCompatActivity {
                         in = new Intent(Principal.this,ImgUpload.class);
                         startActivity(in);
                         break;
+                    case 5:
+                        in = new Intent(Principal.this,PrincipalTarea.class);
+                        startActivity(in);
+                        break;
                 }
             }
         });

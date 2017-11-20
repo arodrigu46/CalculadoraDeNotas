@@ -27,6 +27,7 @@
         <item>@string/miHorario</item>
         <item>@string/calculaNivel</item>
         <item>@string/actualizacarnet</item>
+        <item>@string/tareas</item>
     </array>
     <string name="calculaNivel">Calcula tu Nivel</string>
     <string name="title_activity_promedio">Promedio</string>
@@ -128,4 +129,5 @@
     <string name="mensaje_persona_guardada">Persona Guardada Exitosamente!</string>
     <string name="mensaje_seleccion_imagen">Seleccione la imagen</string>
     <string name="title_activity_principal_tarea">PrincipalTarea</string>
+    <string name="tareas">Tareas</string>
 </resources>

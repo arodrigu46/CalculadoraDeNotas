@@ -34,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/nombre" />
+
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -42,10 +43,11 @@
 
         <EditText
             android:id="@+id/txtFechaEntrega"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
             android:hint="@string/fechaEntrega" />
-
     </android.support.design.widget.TextInputLayout>
 
     <LinearLayout
