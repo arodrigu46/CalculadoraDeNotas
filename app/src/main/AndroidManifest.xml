@@ -32,7 +32,8 @@
             android:name=".PrincipalTarea"
             android:label="@string/title_activity_principal_tarea"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".IntroTareas"></activity>
+        <activity android:name=".IntroTareas" />
+        <activity android:name=".Chat"></activity>
     </application>
 
 </manifest>

@@ -94,4 +94,5 @@
     <string name="si">Yes</string>
     <string name="no">Not</string>
     <string name="error15">" Select a valid option"</string>
+    <string name="chat">" Chat. Chat with us!"</string>
 </resources>

@@ -52,6 +52,10 @@ public class Principal extends AppCompatActivity {
                         in = new Intent(Principal.this,IntroTareas.class);
                         startActivity(in);
                         break;
+                    case 6:
+                        in = new Intent(Principal.this,Chat.class);
+                        startActivity(in);
+                        break;
                 }
             }
         });

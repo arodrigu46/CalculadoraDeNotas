@@ -28,6 +28,7 @@
         <item>@string/calculaNivel</item>
         <item>@string/actualizacarnet</item>
         <item>@string/tareas</item>
+        <item>@string/chat</item>
     </array>
     <string name="calculaNivel">Calcula tu Nivel</string>
     <string name="title_activity_promedio">Promedio</string>
@@ -138,4 +139,5 @@
     <string name="si">Si</string>
     <string name="no">No</string>
     <string name="error15">Seleccione una opción válida</string>
+    <string name="chat">Chat ¡Chatea con nosotros!</string>
 </resources>
